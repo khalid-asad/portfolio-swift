@@ -16,6 +16,7 @@
 		197D68AD20A156960088B990 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197D68AC20A156960088B990 /* ThirdViewController.swift */; };
 		197D68AF20A156AF0088B990 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197D68AE20A156AF0088B990 /* FourthViewController.swift */; };
 		197D68B120A156BE0088B990 /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197D68B020A156BE0088B990 /* FifthViewController.swift */; };
+		19D84F6720A277FA00FC6DD7 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D84F6620A277FA00FC6DD7 /* CustomCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		197D68AC20A156960088B990 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		197D68AE20A156AF0088B990 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 		197D68B020A156BE0088B990 /* FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
+		19D84F6620A277FA00FC6DD7 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				197D689820A13EA20088B990 /* AppDelegate.swift */,
+				19D84F6620A277FA00FC6DD7 /* CustomCollectionViewCell.swift */,
 				197D689A20A13EA20088B990 /* FirstViewController.swift */,
 				197D689C20A13EA20088B990 /* SecondViewController.swift */,
 				197D68AC20A156960088B990 /* ThirdViewController.swift */,
@@ -148,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				197D68B120A156BE0088B990 /* FifthViewController.swift in Sources */,
+				19D84F6720A277FA00FC6DD7 /* CustomCollectionViewCell.swift in Sources */,
 				197D689D20A13EA20088B990 /* SecondViewController.swift in Sources */,
 				197D689920A13EA20088B990 /* AppDelegate.swift in Sources */,
 				197D68AD20A156960088B990 /* ThirdViewController.swift in Sources */,
