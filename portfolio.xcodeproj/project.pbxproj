@@ -9,9 +9,7 @@
 /* Begin PBXBuildFile section */
 		197D689920A13EA20088B990 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197D689820A13EA20088B990 /* AppDelegate.swift */; };
 		197D689B20A13EA20088B990 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197D689A20A13EA20088B990 /* FirstViewController.swift */; };
-		197D68A020A13EA20088B990 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 197D689E20A13EA20088B990 /* Main.storyboard */; };
 		197D68A220A13EA30088B990 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 197D68A120A13EA30088B990 /* Assets.xcassets */; };
-		197D68A520A13EA30088B990 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 197D68A320A13EA30088B990 /* LaunchScreen.storyboard */; };
 		197D68AD20A156960088B990 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197D68AC20A156960088B990 /* ThirdViewController.swift */; };
 		197D68AF20A156AF0088B990 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197D68AE20A156AF0088B990 /* FourthViewController.swift */; };
 		197D68B120A156BE0088B990 /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197D68B020A156BE0088B990 /* FifthViewController.swift */; };
@@ -146,9 +144,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				197D68A520A13EA30088B990 /* LaunchScreen.storyboard in Resources */,
 				197D68A220A13EA30088B990 /* Assets.xcassets in Resources */,
-				197D68A020A13EA20088B990 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

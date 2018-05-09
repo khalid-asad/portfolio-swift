@@ -10,13 +10,15 @@ import Foundation
 
 public class JobData {
     
-    public var companyName: String
+    public var companyImage: String
     public var jobTitle: String
+    public var dates: String
     public var jobDescription: [JobDescData]?
     
-    init(companyName: String, jobTitle: String, jobDescription: [JobDescData]?){
-        self.companyName = companyName
+    init(companyImage: String, jobTitle: String, dates: String, jobDescription: [JobDescData]?){
+        self.companyImage = companyImage
         self.jobTitle = jobTitle
+        self.dates = dates
         self.jobDescription = jobDescription
     }
 

@@ -12,4 +12,5 @@ import UIKit
 class DefaultCell : UITableViewCell{
     @IBOutlet weak var companyImage: UIImageView!
     @IBOutlet weak var jobTitle: UILabel!
+    @IBOutlet weak var dates: UILabel!
 }
