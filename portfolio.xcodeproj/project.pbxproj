@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		197D689920A13EA20088B990 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197D689820A13EA20088B990 /* AppDelegate.swift */; };
 		197D689B20A13EA20088B990 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197D689A20A13EA20088B990 /* FirstViewController.swift */; };
-		197D689D20A13EA20088B990 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197D689C20A13EA20088B990 /* SecondViewController.swift */; };
 		197D68A020A13EA20088B990 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 197D689E20A13EA20088B990 /* Main.storyboard */; };
 		197D68A220A13EA30088B990 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 197D68A120A13EA30088B990 /* Assets.xcassets */; };
 		197D68A520A13EA30088B990 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 197D68A320A13EA30088B990 /* LaunchScreen.storyboard */; };
@@ -17,13 +16,16 @@
 		197D68AF20A156AF0088B990 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197D68AE20A156AF0088B990 /* FourthViewController.swift */; };
 		197D68B120A156BE0088B990 /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197D68B020A156BE0088B990 /* FifthViewController.swift */; };
 		19D84F6720A277FA00FC6DD7 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D84F6620A277FA00FC6DD7 /* CustomCollectionViewCell.swift */; };
+		19D84F6D20A2BB9500FC6DD7 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D84F6C20A2BB9500FC6DD7 /* SecondViewController.swift */; };
+		19D84F6F20A2BD9A00FC6DD7 /* DefaultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D84F6E20A2BD9A00FC6DD7 /* DefaultCell.swift */; };
+		19D84F7120A2BDCB00FC6DD7 /* ExpansionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D84F7020A2BDCB00FC6DD7 /* ExpansionCell.swift */; };
+		19D84F7520A2C44600FC6DD7 /* JobData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D84F7420A2C44600FC6DD7 /* JobData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		197D689520A13EA20088B990 /* portfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = portfolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		197D689820A13EA20088B990 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		197D689A20A13EA20088B990 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		197D689C20A13EA20088B990 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		197D689F20A13EA20088B990 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		197D68A120A13EA30088B990 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		197D68A420A13EA30088B990 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -32,6 +34,10 @@
 		197D68AE20A156AF0088B990 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 		197D68B020A156BE0088B990 /* FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
 		19D84F6620A277FA00FC6DD7 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		19D84F6C20A2BB9500FC6DD7 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		19D84F6E20A2BD9A00FC6DD7 /* DefaultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCell.swift; sourceTree = "<group>"; };
+		19D84F7020A2BDCB00FC6DD7 /* ExpansionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpansionCell.swift; sourceTree = "<group>"; };
+		19D84F7420A2C44600FC6DD7 /* JobData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,11 +73,14 @@
 				197D689820A13EA20088B990 /* AppDelegate.swift */,
 				19D84F6620A277FA00FC6DD7 /* CustomCollectionViewCell.swift */,
 				197D689A20A13EA20088B990 /* FirstViewController.swift */,
-				197D689C20A13EA20088B990 /* SecondViewController.swift */,
+				19D84F6C20A2BB9500FC6DD7 /* SecondViewController.swift */,
 				197D68AC20A156960088B990 /* ThirdViewController.swift */,
 				197D68AE20A156AF0088B990 /* FourthViewController.swift */,
 				197D68B020A156BE0088B990 /* FifthViewController.swift */,
 				197D689E20A13EA20088B990 /* Main.storyboard */,
+				19D84F7420A2C44600FC6DD7 /* JobData.swift */,
+				19D84F6E20A2BD9A00FC6DD7 /* DefaultCell.swift */,
+				19D84F7020A2BDCB00FC6DD7 /* ExpansionCell.swift */,
 				197D68A120A13EA30088B990 /* Assets.xcassets */,
 				197D68A320A13EA30088B990 /* LaunchScreen.storyboard */,
 				197D68A620A13EA30088B990 /* Info.plist */,
@@ -151,10 +160,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				197D68B120A156BE0088B990 /* FifthViewController.swift in Sources */,
+				19D84F6F20A2BD9A00FC6DD7 /* DefaultCell.swift in Sources */,
 				19D84F6720A277FA00FC6DD7 /* CustomCollectionViewCell.swift in Sources */,
-				197D689D20A13EA20088B990 /* SecondViewController.swift in Sources */,
 				197D689920A13EA20088B990 /* AppDelegate.swift in Sources */,
 				197D68AD20A156960088B990 /* ThirdViewController.swift in Sources */,
+				19D84F7520A2C44600FC6DD7 /* JobData.swift in Sources */,
+				19D84F7120A2BDCB00FC6DD7 /* ExpansionCell.swift in Sources */,
+				19D84F6D20A2BB9500FC6DD7 /* SecondViewController.swift in Sources */,
 				197D689B20A13EA20088B990 /* FirstViewController.swift in Sources */,
 				197D68AF20A156AF0088B990 /* FourthViewController.swift in Sources */,
 			);
