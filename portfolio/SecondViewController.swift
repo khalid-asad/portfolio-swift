@@ -12,13 +12,13 @@ import UIKit
 
 class SecondViewController: UITableViewController {
 
-    var jobData: [JobData?]?
+    //var jobData: [JobData?]?
     
     override func viewDidLoad() {
-        jobData = getData()
-        tableView.rowHeight = UITableViewAutomaticDimension
+        //jobData = getData()
+        //tableView.rowHeight = UITableViewAutomaticDimension
         
-        //super.viewDidLoad()
+        super.viewDidLoad()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -26,7 +26,7 @@ class SecondViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-    
+    /*
     private func getData() -> [JobData?] {
         let data: [JobData?] = []
         
@@ -137,7 +137,7 @@ class SecondViewController: UITableViewController {
         }
         
         return selectedCellIndex
-    }
+    }*/
     
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
