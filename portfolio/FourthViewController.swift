@@ -32,6 +32,9 @@ class FourthViewController: UIViewController, UICollectionViewDataSource, UIColl
         cell.cardName.text = projectNames[indexPath.row]
         cell.cardImage.image = imageNames[indexPath.row]
         cell.cardDescription.text = descriptions[indexPath.row]
+        cell.layer.borderColor = UIColor.black.cgColor
+        cell.layer.borderWidth = 1
+        cell.layer.cornerRadius = 8
         return cell
     }
     
