@@ -9,10 +9,11 @@
 import UIKit
 
 class ThirdViewController: UIViewController {
-
+    @IBOutlet weak var capstoneDescription: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        capstoneDescription.text = "A special award was offered from McMaster's W. Booth School of Engineering Practice recognizing innovation and entrepreneurial merit \n$500 cash and a free application to any of the WBSEP master's degree programs\n\nEKhalid Asad, Danishbir Gill, Bhautik Gandhi, Vishal Kharker."
         // Do any additional setup after loading the view.
     }
 
