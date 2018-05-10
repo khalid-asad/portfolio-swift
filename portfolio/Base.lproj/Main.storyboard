@@ -61,7 +61,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="connect" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="collectionView" destination="5IM-aK-COG" id="vYW-Af-bAc"/>
                     </connections>
@@ -91,10 +91,10 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--Item-->
+        <!--Experience-->
         <scene sceneID="F2g-Nb-Ryb">
             <objects>
-                <tableViewController id="3fA-AJ-adK" customClass="SecondViewController" customModule="portfolio" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Experience" id="3fA-AJ-adK" customClass="SecondViewController" customModule="portfolio" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="cUP-iU-wFY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -108,20 +108,20 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rogers" translatesAutoresizingMaskIntoConstraints="NO" id="L7X-l3-tpW">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="105"/>
+                                            <rect key="frame" x="0.0" y="11" width="414" height="105"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Developer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ruD-ao-Fcd">
-                                            <rect key="frame" x="6" y="113" width="211" height="37"/>
+                                            <rect key="frame" x="6" y="118" width="225" height="37"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJh-b6-y1C">
-                                            <rect key="frame" x="255" y="113" width="152" height="36"/>
+                                            <rect key="frame" x="239" y="118" width="168" height="36"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -142,9 +142,9 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nDF-E9-R8z">
-                                            <rect key="frame" x="11" y="0.0" width="403" height="44"/>
+                                            <rect key="frame" x="11" y="0.0" width="398" height="71"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -160,7 +160,7 @@
                             <outlet property="delegate" destination="3fA-AJ-adK" id="Krh-p3-SpL"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="2Ew-6R-87v" userLabel="Experience"/>
+                    <tabBarItem key="tabBarItem" title="Experience" image="experience" id="2Ew-6R-87v" userLabel="Experience"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qa8-qt-mOP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -206,7 +206,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="zNr-LC-sJR"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Education" id="43U-C2-bTz"/>
+                    <tabBarItem key="tabBarItem" title="Education" image="education" id="43U-C2-bTz"/>
                     <connections>
                         <outlet property="capstoneDescription" destination="lMR-Ge-iRS" id="Zze-u6-ufb"/>
                     </connections>
@@ -278,7 +278,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="3Wo-wU-Hbm"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Projects" id="1AX-bn-vsZ"/>
+                    <tabBarItem key="tabBarItem" title="Projects" image="projects" id="1AX-bn-vsZ"/>
                     <connections>
                         <outlet property="collectionView" destination="nk9-ZV-ZIp" id="wi8-Mo-V6x"/>
                     </connections>
@@ -338,7 +338,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="dS6-ez-ldY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Skills" id="4rY-R6-K9q"/>
+                    <tabBarItem key="tabBarItem" title="Skills" image="skills" id="4rY-R6-K9q"/>
                     <connections>
                         <outlet property="collectionView" destination="dox-Hb-9aM" id="hBM-sw-Q00"/>
                     </connections>
@@ -350,11 +350,15 @@
     </scenes>
     <resources>
         <image name="capstone" width="816" height="612"/>
+        <image name="connect" width="32" height="32"/>
         <image name="duckhuntjava" width="585" height="622"/>
-        <image name="first" width="30" height="30"/>
+        <image name="education" width="32" height="32"/>
+        <image name="experience" width="32" height="32"/>
         <image name="github" width="72" height="72"/>
         <image name="j" width="512" height="512"/>
         <image name="mcmasteruniversitylogo2" width="1548" height="444"/>
+        <image name="projects" width="32" height="32"/>
         <image name="rogers" width="464" height="188"/>
+        <image name="skills" width="32" height="32"/>
     </resources>
 </document>
