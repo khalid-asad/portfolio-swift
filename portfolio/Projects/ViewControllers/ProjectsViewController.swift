@@ -1,5 +1,5 @@
 //
-//  FourthViewController.swift
+//  ProjectsViewController.swift
 //  portfolio
 //
 //  Created by Khalid Asad on 2018-05-07.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FourthViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class ProjectsViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     @IBOutlet weak var collectionView: UICollectionView!
     
     let projectNames = ["Duck Hunt Java", "Robot World", "Online Chat Database", "Image Interpolation and Filtering", "FPGA Image Decompression", "File and Folder Viewer", "Multi-threaded Shear Sort", "Recursive Fibonacci"]
@@ -42,16 +42,4 @@ class FourthViewController: UIViewController, UICollectionViewDataSource, UIColl
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

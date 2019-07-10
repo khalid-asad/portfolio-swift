@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		197D689920A13EA20088B990 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197D689820A13EA20088B990 /* AppDelegate.swift */; };
-		197D689B20A13EA20088B990 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197D689A20A13EA20088B990 /* FirstViewController.swift */; };
+		197D689B20A13EA20088B990 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197D689A20A13EA20088B990 /* HomeViewController.swift */; };
 		197D68A220A13EA30088B990 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 197D68A120A13EA30088B990 /* Assets.xcassets */; };
-		197D68AD20A156960088B990 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197D68AC20A156960088B990 /* ThirdViewController.swift */; };
-		197D68AF20A156AF0088B990 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197D68AE20A156AF0088B990 /* FourthViewController.swift */; };
-		197D68B120A156BE0088B990 /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197D68B020A156BE0088B990 /* FifthViewController.swift */; };
+		197D68AD20A156960088B990 /* EducationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197D68AC20A156960088B990 /* EducationViewController.swift */; };
+		197D68AF20A156AF0088B990 /* ProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197D68AE20A156AF0088B990 /* ProjectsViewController.swift */; };
+		197D68B120A156BE0088B990 /* SkillsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197D68B020A156BE0088B990 /* SkillsViewController.swift */; };
 		19D84F6720A277FA00FC6DD7 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D84F6620A277FA00FC6DD7 /* CustomCollectionViewCell.swift */; };
-		19D84F6D20A2BB9500FC6DD7 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D84F6C20A2BB9500FC6DD7 /* SecondViewController.swift */; };
+		19D84F6D20A2BB9500FC6DD7 /* ExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D84F6C20A2BB9500FC6DD7 /* ExperienceViewController.swift */; };
 		19D84F6F20A2BD9A00FC6DD7 /* DefaultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D84F6E20A2BD9A00FC6DD7 /* DefaultCell.swift */; };
 		19D84F7120A2BDCB00FC6DD7 /* ExpansionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D84F7020A2BDCB00FC6DD7 /* ExpansionCell.swift */; };
 		19D84F7520A2C44600FC6DD7 /* JobData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D84F7420A2C44600FC6DD7 /* JobData.swift */; };
@@ -26,16 +26,16 @@
 /* Begin PBXFileReference section */
 		197D689520A13EA20088B990 /* portfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = portfolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		197D689820A13EA20088B990 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		197D689A20A13EA20088B990 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		197D689A20A13EA20088B990 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		197D689F20A13EA20088B990 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		197D68A120A13EA30088B990 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		197D68A420A13EA30088B990 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		197D68A620A13EA30088B990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		197D68AC20A156960088B990 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
-		197D68AE20A156AF0088B990 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
-		197D68B020A156BE0088B990 /* FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
+		197D68AC20A156960088B990 /* EducationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationViewController.swift; sourceTree = "<group>"; };
+		197D68AE20A156AF0088B990 /* ProjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewController.swift; sourceTree = "<group>"; };
+		197D68B020A156BE0088B990 /* SkillsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsViewController.swift; sourceTree = "<group>"; };
 		19D84F6620A277FA00FC6DD7 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
-		19D84F6C20A2BB9500FC6DD7 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		19D84F6C20A2BB9500FC6DD7 /* ExperienceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceViewController.swift; sourceTree = "<group>"; };
 		19D84F6E20A2BD9A00FC6DD7 /* DefaultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCell.swift; sourceTree = "<group>"; };
 		19D84F7020A2BDCB00FC6DD7 /* ExpansionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpansionCell.swift; sourceTree = "<group>"; };
 		19D84F7420A2C44600FC6DD7 /* JobData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobData.swift; sourceTree = "<group>"; };
@@ -72,14 +72,14 @@
 		197D689720A13EA20088B990 /* portfolio */ = {
 			isa = PBXGroup;
 			children = (
+				3052836122D5840000E270D4 /* Home */,
+				3052836522D5842100E270D4 /* Experience */,
+				3052836422D5841B00E270D4 /* Education */,
+				3052836322D5841500E270D4 /* Projects */,
+				3052836222D5840A00E270D4 /* Skills */,
 				197D689820A13EA20088B990 /* AppDelegate.swift */,
 				19D84F6620A277FA00FC6DD7 /* CustomCollectionViewCell.swift */,
-				197D689A20A13EA20088B990 /* FirstViewController.swift */,
-				19D84F6C20A2BB9500FC6DD7 /* SecondViewController.swift */,
-				197D68AC20A156960088B990 /* ThirdViewController.swift */,
-				197D68AE20A156AF0088B990 /* FourthViewController.swift */,
 				19D84F7820A2EB8500FC6DD7 /* CardsCollectionViewCell.swift */,
-				197D68B020A156BE0088B990 /* FifthViewController.swift */,
 				197D689E20A13EA20088B990 /* Main.storyboard */,
 				19D84F7420A2C44600FC6DD7 /* JobData.swift */,
 				19D84F6E20A2BD9A00FC6DD7 /* DefaultCell.swift */,
@@ -89,6 +89,126 @@
 				197D68A620A13EA30088B990 /* Info.plist */,
 			);
 			path = portfolio;
+			sourceTree = "<group>";
+		};
+		3052836122D5840000E270D4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3052836B22D5848700E270D4 /* Models */,
+				3052836622D5845900E270D4 /* ViewControllers */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3052836222D5840A00E270D4 /* Skills */ = {
+			isa = PBXGroup;
+			children = (
+				3052836F22D5849F00E270D4 /* Models */,
+				3052836A22D5847500E270D4 /* ViewControllers */,
+			);
+			path = Skills;
+			sourceTree = "<group>";
+		};
+		3052836322D5841500E270D4 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				3052836E22D5849C00E270D4 /* Models */,
+				3052836922D5847000E270D4 /* ViewControllers */,
+			);
+			path = Projects;
+			sourceTree = "<group>";
+		};
+		3052836422D5841B00E270D4 /* Education */ = {
+			isa = PBXGroup;
+			children = (
+				3052836D22D5849900E270D4 /* Models */,
+				3052836822D5846C00E270D4 /* ViewControllers */,
+			);
+			path = Education;
+			sourceTree = "<group>";
+		};
+		3052836522D5842100E270D4 /* Experience */ = {
+			isa = PBXGroup;
+			children = (
+				3052836C22D5848F00E270D4 /* Models */,
+				3052836722D5846200E270D4 /* ViewControllers */,
+			);
+			path = Experience;
+			sourceTree = "<group>";
+		};
+		3052836622D5845900E270D4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				197D689A20A13EA20088B990 /* HomeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3052836722D5846200E270D4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				19D84F6C20A2BB9500FC6DD7 /* ExperienceViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3052836822D5846C00E270D4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				197D68AC20A156960088B990 /* EducationViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3052836922D5847000E270D4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				197D68AE20A156AF0088B990 /* ProjectsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3052836A22D5847500E270D4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				197D68B020A156BE0088B990 /* SkillsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3052836B22D5848700E270D4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3052836C22D5848F00E270D4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3052836D22D5849900E270D4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3052836E22D5849C00E270D4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3052836F22D5849F00E270D4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +243,7 @@
 				TargetAttributes = {
 					197D689420A13EA20088B990 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -162,17 +283,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				197D68B120A156BE0088B990 /* FifthViewController.swift in Sources */,
+				197D68B120A156BE0088B990 /* SkillsViewController.swift in Sources */,
 				19D84F6F20A2BD9A00FC6DD7 /* DefaultCell.swift in Sources */,
 				19D84F7920A2EB8500FC6DD7 /* CardsCollectionViewCell.swift in Sources */,
 				19D84F6720A277FA00FC6DD7 /* CustomCollectionViewCell.swift in Sources */,
 				197D689920A13EA20088B990 /* AppDelegate.swift in Sources */,
-				197D68AD20A156960088B990 /* ThirdViewController.swift in Sources */,
+				197D68AD20A156960088B990 /* EducationViewController.swift in Sources */,
 				19D84F7520A2C44600FC6DD7 /* JobData.swift in Sources */,
 				19D84F7120A2BDCB00FC6DD7 /* ExpansionCell.swift in Sources */,
-				19D84F6D20A2BB9500FC6DD7 /* SecondViewController.swift in Sources */,
-				197D689B20A13EA20088B990 /* FirstViewController.swift in Sources */,
-				197D68AF20A156AF0088B990 /* FourthViewController.swift in Sources */,
+				19D84F6D20A2BB9500FC6DD7 /* ExperienceViewController.swift in Sources */,
+				197D689B20A13EA20088B990 /* HomeViewController.swift in Sources */,
+				197D68AF20A156AF0088B990 /* ProjectsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,7 +445,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.khalidtest.portfolio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -341,7 +462,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.khalidtest.portfolio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

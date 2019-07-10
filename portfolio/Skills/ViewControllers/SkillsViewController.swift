@@ -1,5 +1,5 @@
 //
-//  FifthViewController.swift
+//  SkillsViewController.swift
 //  portfolio
 //
 //  Created by Khalid Asad on 2018-05-07.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FifthViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class SkillsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -40,16 +40,4 @@ class FifthViewController: UIViewController, UICollectionViewDelegate, UICollect
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
