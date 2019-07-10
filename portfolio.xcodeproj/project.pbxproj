@@ -21,6 +21,7 @@
 		19D84F7620A2E19000FC6DD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 197D689E20A13EA20088B990 /* Main.storyboard */; };
 		19D84F7720A2E19400FC6DD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 197D68A320A13EA30088B990 /* LaunchScreen.storyboard */; };
 		19D84F7920A2EB8500FC6DD7 /* CardsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D84F7820A2EB8500FC6DD7 /* CardsCollectionViewCell.swift */; };
+		3052837222D5858A00E270D4 /* PlatformCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3052837122D5858A00E270D4 /* PlatformCommon.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		19D84F7020A2BDCB00FC6DD7 /* ExpansionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpansionCell.swift; sourceTree = "<group>"; };
 		19D84F7420A2C44600FC6DD7 /* JobData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobData.swift; sourceTree = "<group>"; };
 		19D84F7820A2EB8500FC6DD7 /* CardsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsCollectionViewCell.swift; sourceTree = "<group>"; };
+		3052837122D5858A00E270D4 /* PlatformCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PlatformCommon.framework; path = Carthage/Build/iOS/PlatformCommon.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3052837222D5858A00E270D4 /* PlatformCommon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +61,7 @@
 			children = (
 				197D689720A13EA20088B990 /* portfolio */,
 				197D689620A13EA20088B990 /* Products */,
+				3052837022D5858900E270D4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -211,6 +215,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		3052837022D5858900E270D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3052837122D5858A00E270D4 /* PlatformCommon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -221,6 +233,7 @@
 				197D689120A13EA20088B990 /* Sources */,
 				197D689220A13EA20088B990 /* Frameworks */,
 				197D689320A13EA20088B990 /* Resources */,
+				3052837322D5862400E270D4 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -277,6 +290,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3052837322D5862400E270D4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/PlatformCommon.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		197D689120A13EA20088B990 /* Sources */ = {
@@ -438,7 +472,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = portfolio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,7 +494,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = portfolio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
