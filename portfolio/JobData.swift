@@ -21,7 +21,6 @@ public class JobData {
         self.dates = dates
         self.jobDescription = jobDescription
     }
-
 }
 
 public class JobDescData{

@@ -7,49 +7,81 @@
 //
 
 import UIKit
-import SafariServices
+import PlatformCommon
 
-class HomeViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
-    
+class HomeViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UISearchBarDelegate {
+
     @IBOutlet weak var collectionView: UICollectionView!
     
-    let mainMenu = ["github", "linkedin", "website", "email", "google play", "changelog", "feedback", "star", "donate", "help"]
-    let urls = ["https://www.github.com/xeroyzenith", "https://www.linkedin.com/in/khalidasad", "https://www.khalidasad93.wixsite.com/khalidasad", "www.gmail.com", "https://play.google.com/store/apps/developer?id=Khalid+Asad", "https://github.com/xeroyzenith/iOSPortfolio/commits/master", "https://play.google.com/store/apps/details?id=com.xeroy.profileapplication", "https://play.google.com/store/apps/details?id=com.xeroy.profileapplication", "https://www.paypal.me/KhalidAsad", "https://github.com/xeroyzenith/ProfileApplication/blob/master/README.md"]
-    
+    private var model: HomeModel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        collectionView.delegate = self
-        collectionView.dataSource = self
+        
+        model = HomeModel()
+        
+        layoutCollectionView()
+        
+        fetchData()
+    }
+
+    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        return 1
+    }
+
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
+        return model.stackableItems.count
     }
     
-    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
-        return mainMenu.count
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "homeCell", for: indexPath) as! HomeCollectionViewCell
+        let name = Array(model.links.keys)[indexPath.row]
+        
+        cell.cellTitle.text = name.uppercased()
+        cell.cellTitle.textColor = .black
+        cell.cellTitle.font = UIFont(name: "Helvetica", size: 12)
+        cell.cellImage.image = UIImage(named: name)
+        cell.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tap(_:))))
+        
+        return cell
     }
-    
+
     @objc func tap(_ sender: UITapGestureRecognizer) {
         let location = sender.location(in: self.collectionView)
         let indexPath = self.collectionView.indexPathForItem(at: location)
+
+        guard let index = indexPath else { return }
+        print("Clicked on index: " + String(index[1]))
         
-        if let index = indexPath{
-            print("Got Clicked on index: " + String(index[1]))
-        }
-        
-        if let url = URL(string: urls[indexPath![1]]), UIApplication.shared.canOpenURL(url){
+        if let url = URL(string: Array(model.links.values)[index.row]), UIApplication.shared.canOpenURL(url){
             UIApplication.shared.open(url, options: [:])
         }
     }
+}
+
+// MARK: - Network Request via Model
+extension HomeViewController {
     
-    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "customCell", for: indexPath) as! CustomCollectionViewCell
-        cell.imageCell.setImage(UIImage(named: mainMenu[indexPath.row]), for: .normal)
-        cell.imageCell.showsTouchWhenHighlighted = true
-        cell.labelCell.text = mainMenu[indexPath.row].capitalized
-        cell.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tap(_:))))
-        return cell
+    func fetchData(_ complete: (() -> Void)? = nil) {
+        model.fetchData(completion: { [unowned self] status in
+            switch status {
+            case .success:
+                DispatchQueue.main.async {
+                    self.collectionView.reloadData()
+                }
+            default:
+                break
+            }
+        })
     }
+}
+
+// MARK: - Privates
+extension HomeViewController {
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    private func layoutCollectionView() {
+        let cellWidth = ((UIScreen.main.bounds.width) - 32 - 30 ) / 3
+        let cellLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout
+        cellLayout?.itemSize = CGSize(width: cellWidth, height: cellWidth)
     }
 }

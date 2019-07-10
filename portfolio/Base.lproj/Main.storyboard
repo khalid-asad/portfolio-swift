@@ -18,52 +18,67 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5IM-aK-COG">
-                                <rect key="frame" x="28" y="72" width="361" height="544"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bE4-py-bv8">
-                                    <size key="itemSize" width="111" height="104"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7Pv-LP-qAk">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ge6-85-2aU">
+                                    <size key="itemSize" width="200" height="200"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="customCell" id="OUo-28-q3K" customClass="CustomCollectionViewCell" customModule="portfolio" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="111" height="104"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="homeCell" id="Htx-cj-aRB" customClass="HomeCollectionViewCell" customModule="portfolio" customModuleProvider="target">
+                                        <rect key="frame" x="107" y="10" width="200" height="200"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="111" height="104"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WWp-1A-zXF">
-                                                    <rect key="frame" x="19" y="0.0" width="73" height="72"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="Github" image="github"/>
-                                                </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GitHub" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="upN-kU-Nar">
-                                                    <rect key="frame" x="0.0" y="83" width="111" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QIq-BO-Cl9">
+                                                    <rect key="frame" x="8" y="52.000000000000007" width="184" height="109.66666666666669"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="spk-Ev-uae">
+                                                    <rect key="frame" x="8" y="171.66666666666666" width="184" height="20.333333333333343"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </view>
+                                        <constraints>
+                                            <constraint firstItem="QIq-BO-Cl9" firstAttribute="top" secondItem="Htx-cj-aRB" secondAttribute="topMargin" id="4Pc-Ba-v2A"/>
+                                            <constraint firstItem="spk-Ev-uae" firstAttribute="top" secondItem="QIq-BO-Cl9" secondAttribute="bottom" constant="10" id="ALA-rR-9Z5"/>
+                                            <constraint firstItem="QIq-BO-Cl9" firstAttribute="leading" secondItem="Htx-cj-aRB" secondAttribute="leadingMargin" id="Li6-it-Vgm"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="spk-Ev-uae" secondAttribute="bottom" id="RhB-LA-VWD"/>
+                                            <constraint firstItem="spk-Ev-uae" firstAttribute="leading" secondItem="Htx-cj-aRB" secondAttribute="leadingMargin" id="Rks-AZ-xZ0"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="spk-Ev-uae" secondAttribute="trailing" id="SP7-ca-svM"/>
+                                            <constraint firstItem="QIq-BO-Cl9" firstAttribute="trailing" secondItem="Htx-cj-aRB" secondAttribute="trailingMargin" id="ukE-wk-q4T"/>
+                                        </constraints>
                                         <connections>
-                                            <outlet property="imageCell" destination="WWp-1A-zXF" id="iX6-Cn-aXz"/>
-                                            <outlet property="labelCell" destination="upN-kU-Nar" id="URO-Tr-CaY"/>
+                                            <outlet property="cellImage" destination="QIq-BO-Cl9" id="fFi-XB-QY2"/>
+                                            <outlet property="cellTitle" destination="spk-Ev-uae" id="hXr-X3-vD7"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="9pv-A4-QxB" id="Uue-W5-LOV"/>
+                                    <outlet property="delegate" destination="9pv-A4-QxB" id="LrY-Mw-Uz0"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="7Pv-LP-qAk" secondAttribute="trailing" id="4F2-aO-KsS"/>
+                            <constraint firstItem="7Pv-LP-qAk" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="J58-wZ-F5Y"/>
+                            <constraint firstItem="7Pv-LP-qAk" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="u9Y-L7-ieI"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="7Pv-LP-qAk" secondAttribute="bottom" id="ujN-C9-4ay"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="connect" id="acW-dT-cKf"/>
                     <connections>
-                        <outlet property="collectionView" destination="5IM-aK-COG" id="vYW-Af-bAc"/>
+                        <outlet property="collectionView" destination="7Pv-LP-qAk" id="v7n-7b-TU5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
@@ -334,7 +349,6 @@
         <image name="duckhuntjava" width="438.75" height="466.5"/>
         <image name="education" width="32" height="32"/>
         <image name="experience" width="32" height="32"/>
-        <image name="github" width="72" height="72"/>
         <image name="j" width="512" height="512"/>
         <image name="projects" width="32" height="32"/>
         <image name="rogers" width="464" height="188"/>
