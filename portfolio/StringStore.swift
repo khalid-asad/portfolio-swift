@@ -15,4 +15,5 @@ enum StringStore: String {
     case yesDialog = "Yes"
     case noDialog = "No"
     case linksJSONPath = "https://gist.githubusercontent.com/khalid-asad/747d5847bfb4e21b0c90d686aa2d92d6/raw/8571914e6bb6cdfce36f424306f6e64bddc8c7aa/links.json"
+    case jobExperienceJSONPath = "https://gist.githubusercontent.com/khalid-asad/e9665e1427e239beb070b45d199e7f2c/raw/72c48608ce9bf66e92c778b7d64c8c6ab7ddce92/experience.json"
 }

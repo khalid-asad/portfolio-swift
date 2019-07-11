@@ -26,6 +26,8 @@
 		3052837B22D59A5900E270D4 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3052837A22D59A5900E270D4 /* HomeCollectionViewCell.swift */; };
 		3052837E22D5A98C00E270D4 /* LinksResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3052837D22D5A98C00E270D4 /* LinksResponse.swift */; };
 		3052838022D5AAA000E270D4 /* StringStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3052837F22D5AAA000E270D4 /* StringStore.swift */; };
+		3090D8EE22D69C8700626DE5 /* ExperienceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3090D8ED22D69C8700626DE5 /* ExperienceModel.swift */; };
+		3090D8F022D69FAE00626DE5 /* JobExperienceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3090D8EF22D69FAE00626DE5 /* JobExperienceResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		3052837A22D59A5900E270D4 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		3052837D22D5A98C00E270D4 /* LinksResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksResponse.swift; sourceTree = "<group>"; };
 		3052837F22D5AAA000E270D4 /* StringStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringStore.swift; sourceTree = "<group>"; };
+		3090D8ED22D69C8700626DE5 /* ExperienceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceModel.swift; sourceTree = "<group>"; };
+		3090D8EF22D69FAE00626DE5 /* JobExperienceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobExperienceResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +206,7 @@
 		3052836C22D5848F00E270D4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3090D8ED22D69C8700626DE5 /* ExperienceModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -255,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				3052837D22D5A98C00E270D4 /* LinksResponse.swift */,
+				3090D8EF22D69FAE00626DE5 /* JobExperienceResponse.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -362,12 +368,14 @@
 				3052837B22D59A5900E270D4 /* HomeCollectionViewCell.swift in Sources */,
 				197D68AD20A156960088B990 /* EducationViewController.swift in Sources */,
 				19D84F7520A2C44600FC6DD7 /* JobData.swift in Sources */,
+				3090D8EE22D69C8700626DE5 /* ExperienceModel.swift in Sources */,
 				19D84F7120A2BDCB00FC6DD7 /* ExpansionCell.swift in Sources */,
 				3052837522D5875D00E270D4 /* HomeModel.swift in Sources */,
 				19D84F6D20A2BB9500FC6DD7 /* ExperienceViewController.swift in Sources */,
 				3052837E22D5A98C00E270D4 /* LinksResponse.swift in Sources */,
 				197D689B20A13EA20088B990 /* HomeViewController.swift in Sources */,
 				197D68AF20A156AF0088B990 /* ProjectsViewController.swift in Sources */,
+				3090D8F022D69FAE00626DE5 /* JobExperienceResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
