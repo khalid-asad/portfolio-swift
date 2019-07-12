@@ -33,6 +33,7 @@ extension ExperienceModel {
                 completion(.failure)
                 return
             }
+            
             guard let jobData = data else {
                 print("Error getting data: result is nil")
                 completion(.failure)

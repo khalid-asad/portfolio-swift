@@ -36,11 +36,15 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QIq-BO-Cl9">
-                                                    <rect key="frame" x="8" y="52.000000000000007" width="184" height="109.66666666666669"/>
+                                                    <rect key="frame" x="64" y="52" width="72" height="72"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="72" id="Eit-tY-Tub"/>
+                                                        <constraint firstAttribute="width" constant="72" id="um6-To-7hF"/>
+                                                    </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="spk-Ev-uae">
-                                                    <rect key="frame" x="8" y="171.66666666666666" width="184" height="20.333333333333343"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="8" y="134" width="184" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -49,11 +53,10 @@
                                         <constraints>
                                             <constraint firstItem="QIq-BO-Cl9" firstAttribute="top" secondItem="Htx-cj-aRB" secondAttribute="topMargin" id="4Pc-Ba-v2A"/>
                                             <constraint firstItem="spk-Ev-uae" firstAttribute="top" secondItem="QIq-BO-Cl9" secondAttribute="bottom" constant="10" id="ALA-rR-9Z5"/>
-                                            <constraint firstItem="QIq-BO-Cl9" firstAttribute="leading" secondItem="Htx-cj-aRB" secondAttribute="leadingMargin" id="Li6-it-Vgm"/>
-                                            <constraint firstAttribute="bottomMargin" secondItem="spk-Ev-uae" secondAttribute="bottom" id="RhB-LA-VWD"/>
+                                            <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="spk-Ev-uae" secondAttribute="bottom" id="RhB-LA-VWD"/>
                                             <constraint firstItem="spk-Ev-uae" firstAttribute="leading" secondItem="Htx-cj-aRB" secondAttribute="leadingMargin" id="Rks-AZ-xZ0"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="spk-Ev-uae" secondAttribute="trailing" id="SP7-ca-svM"/>
-                                            <constraint firstItem="QIq-BO-Cl9" firstAttribute="trailing" secondItem="Htx-cj-aRB" secondAttribute="trailingMargin" id="ukE-wk-q4T"/>
+                                            <constraint firstItem="QIq-BO-Cl9" firstAttribute="centerX" secondItem="Htx-cj-aRB" secondAttribute="centerX" id="c4d-fS-eA3"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="cellImage" destination="QIq-BO-Cl9" id="fFi-XB-QY2"/>

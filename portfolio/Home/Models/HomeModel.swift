@@ -40,6 +40,7 @@ extension HomeModel {
                 completion(.failure)
                 return
             }
+            
             guard let linksData = data else {
                 print("Error getting data: result is nil")
                 completion(.failure)
