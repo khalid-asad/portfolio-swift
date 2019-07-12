@@ -14,19 +14,5 @@ class EducationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        educationStackView.arrangedSubviews.forEach {
-            educationStackView.removeArrangedSubview($0)
-            $0.removeFromSuperview()
-        }
-        let profileView = ProfileView.create(image: UIImage(named: "khalid"), name: "name", title: "title")
-        educationStackView.addArrangedSubview(UIView.createView(withSubview: profileView, edgeInsets: .zero))
-        
-//        capstoneDescription.text = "A special award was offered from McMaster's W. Booth School of Engineering Practice recognizing innovation and entrepreneurial merit \n$500 cash and a free application to any of the WBSEP master's degree programs\n\nKhalid Asad, Danishbir Gill, Bhautik Gandhi, Vishal Kharker."
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 }

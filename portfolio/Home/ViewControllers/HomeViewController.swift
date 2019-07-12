@@ -10,7 +10,8 @@ import UIKit
 import PlatformCommon
 
 class HomeViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UISearchBarDelegate {
-
+    
+    @IBOutlet weak var profileView: ProfileView!
     @IBOutlet weak var collectionView: UICollectionView!
     
     private var model: HomeModel!
@@ -20,11 +21,20 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         
         model = HomeModel()
         
+        configureProfileView()
         layoutCollectionView()
-        
         fetchData()
     }
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.setNeedsStatusBarAppearanceUpdate()
+    }
+    
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return .lightContent
+    }
+    
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1
     }
@@ -83,5 +93,11 @@ extension HomeViewController {
         let cellWidth = ((UIScreen.main.bounds.width) - 32 - 30 ) / 3
         let cellLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout
         cellLayout?.itemSize = CGSize(width: cellWidth, height: cellWidth)
+    }
+    
+    private func configureProfileView() {
+        profileView.name = StringStore.profileName.rawValue
+        profileView.title = StringStore.profileTitle.rawValue
+        profileView.image = UIImage(named: "khalid")
     }
 }

@@ -26,6 +26,10 @@
 		3052837B22D59A5900E270D4 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3052837A22D59A5900E270D4 /* HomeCollectionViewCell.swift */; };
 		3052837E22D5A98C00E270D4 /* LinksResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3052837D22D5A98C00E270D4 /* LinksResponse.swift */; };
 		3052838022D5AAA000E270D4 /* StringStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3052837F22D5AAA000E270D4 /* StringStore.swift */; };
+		308DE47822D856C4002947F4 /* ProjectsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308DE47722D856C4002947F4 /* ProjectsModel.swift */; };
+		308DE47A22D85710002947F4 /* ProjectsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308DE47922D85710002947F4 /* ProjectsResponse.swift */; };
+		308DE47D22D857C0002947F4 /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308DE47C22D857C0002947F4 /* ProjectView.swift */; };
+		308DE47F22D857CA002947F4 /* ProjectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 308DE47E22D857CA002947F4 /* ProjectView.xib */; };
 		3090D8EE22D69C8700626DE5 /* ExperienceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3090D8ED22D69C8700626DE5 /* ExperienceModel.swift */; };
 		3090D8F022D69FAE00626DE5 /* JobExperienceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3090D8EF22D69FAE00626DE5 /* JobExperienceResponse.swift */; };
 		3090D8F622D82ADB00626DE5 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3090D8F522D82ADB00626DE5 /* ProfileView.swift */; };
@@ -54,6 +58,10 @@
 		3052837A22D59A5900E270D4 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		3052837D22D5A98C00E270D4 /* LinksResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksResponse.swift; sourceTree = "<group>"; };
 		3052837F22D5AAA000E270D4 /* StringStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringStore.swift; sourceTree = "<group>"; };
+		308DE47722D856C4002947F4 /* ProjectsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsModel.swift; sourceTree = "<group>"; };
+		308DE47922D85710002947F4 /* ProjectsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsResponse.swift; sourceTree = "<group>"; };
+		308DE47C22D857C0002947F4 /* ProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectView.swift; sourceTree = "<group>"; };
+		308DE47E22D857CA002947F4 /* ProjectView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProjectView.xib; sourceTree = "<group>"; };
 		3090D8ED22D69C8700626DE5 /* ExperienceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceModel.swift; sourceTree = "<group>"; };
 		3090D8EF22D69FAE00626DE5 /* JobExperienceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobExperienceResponse.swift; sourceTree = "<group>"; };
 		3090D8F522D82ADB00626DE5 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
@@ -135,6 +143,7 @@
 		3052836322D5841500E270D4 /* Projects */ = {
 			isa = PBXGroup;
 			children = (
+				308DE47B22D857B4002947F4 /* Views */,
 				3052836E22D5849C00E270D4 /* Models */,
 				3052836922D5847000E270D4 /* ViewControllers */,
 			);
@@ -144,6 +153,7 @@
 		3052836422D5841B00E270D4 /* Education */ = {
 			isa = PBXGroup;
 			children = (
+				308DE47622D84EF6002947F4 /* Views */,
 				3052836D22D5849900E270D4 /* Models */,
 				3052836822D5846C00E270D4 /* ViewControllers */,
 			);
@@ -225,6 +235,7 @@
 		3052836E22D5849C00E270D4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				308DE47722D856C4002947F4 /* ProjectsModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -267,8 +278,25 @@
 			children = (
 				3052837D22D5A98C00E270D4 /* LinksResponse.swift */,
 				3090D8EF22D69FAE00626DE5 /* JobExperienceResponse.swift */,
+				308DE47922D85710002947F4 /* ProjectsResponse.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		308DE47622D84EF6002947F4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		308DE47B22D857B4002947F4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				308DE47C22D857C0002947F4 /* ProjectView.swift */,
+				308DE47E22D857CA002947F4 /* ProjectView.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,6 +363,7 @@
 				19D84F7720A2E19400FC6DD7 /* LaunchScreen.storyboard in Resources */,
 				19D84F7620A2E19000FC6DD7 /* Main.storyboard in Resources */,
 				197D68A220A13EA30088B990 /* Assets.xcassets in Resources */,
+				308DE47F22D857CA002947F4 /* ProjectView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,10 +400,12 @@
 				19D84F7920A2EB8500FC6DD7 /* CardsCollectionViewCell.swift in Sources */,
 				3052838022D5AAA000E270D4 /* StringStore.swift in Sources */,
 				19D84F6720A277FA00FC6DD7 /* CustomCollectionViewCell.swift in Sources */,
+				308DE47822D856C4002947F4 /* ProjectsModel.swift in Sources */,
 				197D689920A13EA20088B990 /* AppDelegate.swift in Sources */,
 				3052837B22D59A5900E270D4 /* HomeCollectionViewCell.swift in Sources */,
 				197D68AD20A156960088B990 /* EducationViewController.swift in Sources */,
 				19D84F7520A2C44600FC6DD7 /* JobData.swift in Sources */,
+				308DE47A22D85710002947F4 /* ProjectsResponse.swift in Sources */,
 				3090D8EE22D69C8700626DE5 /* ExperienceModel.swift in Sources */,
 				3090D8F622D82ADB00626DE5 /* ProfileView.swift in Sources */,
 				19D84F7120A2BDCB00FC6DD7 /* ExpansionCell.swift in Sources */,
@@ -382,6 +413,7 @@
 				19D84F6D20A2BB9500FC6DD7 /* ExperienceViewController.swift in Sources */,
 				3052837E22D5A98C00E270D4 /* LinksResponse.swift in Sources */,
 				197D689B20A13EA20088B990 /* HomeViewController.swift in Sources */,
+				308DE47D22D857C0002947F4 /* ProjectView.swift in Sources */,
 				197D68AF20A156AF0088B990 /* ProjectsViewController.swift in Sources */,
 				3090D8F022D69FAE00626DE5 /* JobExperienceResponse.swift in Sources */,
 			);
