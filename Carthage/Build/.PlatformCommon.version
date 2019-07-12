@@ -1,0 +1,9 @@
+{
+  "commitish" : "c0daaa65c5761a27ffac913d13fa9333601cc8d5",
+  "iOS" : [
+    {
+      "name" : "PlatformCommon",
+      "hash" : "761ca33fbbb101086162385d2e0ddd653efe439f9deed8d644d1a97e0cb1c9be"
+    }
+  ]
+}
