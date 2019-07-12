@@ -7,13 +7,14 @@
 //
 
 import Foundation
+import UIKit
 import PlatformCommon
 
 final class ProjectsModel {
     
     // MARK: - ItemStackable
     enum StackableItem {
-        case projects(project: String?, image: String?, description: String?)
+        case project(project: String?, image: String?, description: String?)
     }
     
     var stackableItems: [ProjectsModel.StackableItem] = []
@@ -39,7 +40,7 @@ extension ProjectsModel {
             }
             
             projectData.forEach { project in
-                self.stackableItems.append(.projects(project: project.project, image: project.image, description: project.description))
+                self.stackableItems.append(.project(project: project.project, image: project.image, description: project.description))
             }
             
             completion(.success)

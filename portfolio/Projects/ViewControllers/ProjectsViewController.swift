@@ -51,11 +51,10 @@ extension ProjectsViewController {
         
         model.stackableItems.forEach { item in
             switch item {
-            case .projects(let project, let image, let description):
+            case .project(let project, let image, let description):
                 addProjectView(project: project, image: image, description: description)
             }
         }
-        
     }
     
     private func addProjectView(project: String?, image: String?, description: String?) {
