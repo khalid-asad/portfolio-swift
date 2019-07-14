@@ -51,18 +51,6 @@ class ExperienceViewController: UITableViewController {
             
             return defaultCell
         }
-//        else {
-//            if doesIndexExist(forIndexRow: getParentCellIndex(expansionIndex: indexPath.row)) {
-//                let expansionCell = tableView.dequeueReusableCell(withIdentifier: "ExpansionCell", for: indexPath) as! ExpansionCell
-//                let descriptionIndex = indexPath.row - getParentCellIndex(expansionIndex: indexPath.row) - 1
-//                switch model.stackableItems[descriptionIndex] {
-//                case .jobExperience(_, _, _, let description):
-//                    expansionCell.jobDescription.text = description
-//                }
-//                expansionCell.selectionStyle = .none
-//                return expansionCell
-//            }
-//        }
         return UITableViewCell()
     }
     
@@ -102,7 +90,6 @@ extension ExperienceViewController {
     }
     
     private func presentExperienceDetailsView(row: Int) {
-//        let vc = ExperienceDetailsViewController()
         let storyboard = UIStoryboard(name: "ExperienceDetails", bundle: nil)
         guard let vc = storyboard.instantiateViewController(withIdentifier: "ExperienceDetails") as? ExperienceDetailsViewController else { return }
         switch model.stackableItems[row] {
@@ -110,7 +97,6 @@ extension ExperienceViewController {
             vc.experienceDetails = ExperienceDetails(image: UIImage(named: company ?? ""), title: role, dates: dates, description: description)
         }
         self.navigationController?.pushViewController(vc, animated: true)
-//        self.present(vc, animated: true, completion: nil)
     }
     
     private func getParentCellIndex(expansionIndex: Int) -> Int{

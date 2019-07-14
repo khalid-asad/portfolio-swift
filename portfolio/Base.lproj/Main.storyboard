@@ -311,32 +311,43 @@
                                             <rect key="frame" x="0.0" y="0.0" width="111" height="104"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="UJY-lM-vAI">
-                                                    <rect key="frame" x="0.0" y="-48" width="567" height="512"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ecn-dz-h7L">
+                                                    <rect key="frame" x="0.0" y="0.0" width="111" height="104"/>
                                                     <subviews>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oY1-de-3ta">
-                                                            <rect key="frame" x="0.0" y="0.0" width="111" height="100"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="height" constant="100" id="i8V-x2-BvF"/>
-                                                                <constraint firstAttribute="width" constant="100" id="vZy-rd-hUW"/>
-                                                            </constraints>
-                                                            <state key="normal" title="Github" image="j"/>
-                                                        </button>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Java" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RZG-Zl-kYD">
-                                                            <rect key="frame" x="0.0" y="100" width="111" height="4"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0KP-aV-n9w">
+                                                            <rect key="frame" x="0.0" y="0.0" width="111" height="104"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oY1-de-3ta">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="111" height="100"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="100" id="Rnm-m6-h0G"/>
+                                                                    </constraints>
+                                                                    <state key="normal" title="Github" image="j"/>
+                                                                </button>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Java" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RZG-Zl-kYD">
+                                                                    <rect key="frame" x="0.0" y="100" width="111" height="4"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
                                                     </subviews>
-                                                </stackView>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="0KP-aV-n9w" secondAttribute="trailing" id="Drs-ps-ozv"/>
+                                                        <constraint firstItem="0KP-aV-n9w" firstAttribute="top" secondItem="ecn-dz-h7L" secondAttribute="top" id="IMr-Cs-u0q"/>
+                                                        <constraint firstItem="0KP-aV-n9w" firstAttribute="leading" secondItem="ecn-dz-h7L" secondAttribute="leading" id="mNZ-mM-kAn"/>
+                                                        <constraint firstAttribute="bottom" secondItem="0KP-aV-n9w" secondAttribute="bottom" id="wbT-mB-pi3"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="UJY-lM-vAI" firstAttribute="top" secondItem="OhB-3B-4m8" secondAttribute="top" id="3V3-hh-Xl5"/>
-                                            <constraint firstAttribute="bottom" secondItem="UJY-lM-vAI" secondAttribute="bottom" id="XOB-I8-wT4"/>
-                                            <constraint firstAttribute="trailing" secondItem="UJY-lM-vAI" secondAttribute="trailing" id="fWr-su-4WQ"/>
-                                            <constraint firstItem="UJY-lM-vAI" firstAttribute="leading" secondItem="OhB-3B-4m8" secondAttribute="leading" id="zDC-KY-tVB"/>
+                                            <constraint firstItem="ecn-dz-h7L" firstAttribute="leading" secondItem="OhB-3B-4m8" secondAttribute="leading" id="L22-cG-z9Q"/>
+                                            <constraint firstItem="ecn-dz-h7L" firstAttribute="top" secondItem="OhB-3B-4m8" secondAttribute="top" id="lf6-3h-P9H"/>
+                                            <constraint firstAttribute="bottom" secondItem="ecn-dz-h7L" secondAttribute="bottom" id="ncT-vV-2uV"/>
+                                            <constraint firstAttribute="trailing" secondItem="ecn-dz-h7L" secondAttribute="trailing" id="qtF-3z-WPS"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="imageCell" destination="oY1-de-3ta" id="LCo-rQ-FGP"/>
