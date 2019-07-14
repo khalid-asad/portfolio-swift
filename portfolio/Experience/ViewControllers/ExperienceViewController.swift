@@ -22,13 +22,14 @@ class ExperienceViewController: UITableViewController {
         
         model = ExperienceModel()
         
+        title = StringStore.experienceTitle.rawValue
+        
         fetchData()
         
         tableView.rowHeight = UITableView.automaticDimension
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return numberOfExperiences
     }
     
@@ -49,64 +50,26 @@ class ExperienceViewController: UITableViewController {
             }
             
             return defaultCell
-        } else {
-            if doesIndexExist(forIndexRow: getParentCellIndex(expansionIndex: indexPath.row)) {
-                let expansionCell = tableView.dequeueReusableCell(withIdentifier: "ExpansionCell", for: indexPath) as! ExpansionCell
-                let descriptionIndex = indexPath.row - getParentCellIndex(expansionIndex: indexPath.row) - 1
-                switch model.stackableItems[descriptionIndex] {
-                case .jobExperience(_, _, _, let description):
-                    expansionCell.jobDescription.text = description
-                }
-                expansionCell.selectionStyle = .none
-                return expansionCell
-            }
         }
+//        else {
+//            if doesIndexExist(forIndexRow: getParentCellIndex(expansionIndex: indexPath.row)) {
+//                let expansionCell = tableView.dequeueReusableCell(withIdentifier: "ExpansionCell", for: indexPath) as! ExpansionCell
+//                let descriptionIndex = indexPath.row - getParentCellIndex(expansionIndex: indexPath.row) - 1
+//                switch model.stackableItems[descriptionIndex] {
+//                case .jobExperience(_, _, _, let description):
+//                    expansionCell.jobDescription.text = description
+//                }
+//                expansionCell.selectionStyle = .none
+//                return expansionCell
+//            }
+//        }
         return UITableViewCell()
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if doesIndexExist(forIndexRow: indexPath.row) {
-            if (indexPath.row + 1 >= numberOfExperiences) {
-                expandCell(tableView: tableView, index: indexPath.row)
-            } else {
-                if doesIndexExist(forIndexRow: indexPath.row + 1) {
-                    expandCell(tableView: tableView, index: indexPath.row)
-                } else {
-                    contractCell(tableView: tableView, index: indexPath.row)
-                }
-            }
+            presentExperienceDetailsView(row: indexPath.row)
         }
-    }
-    
-    private func expandCell(tableView: UITableView, index: Int) {
-        //        tableView.insertRows(at: [NSIndexPath(row: index + 1, section: 0) as IndexPath], with: .top)
-        //        if let jobDescs = jobData?[index]?.jobDescription {
-        //            for i in 1...jobDescs.count {
-        //                jobData?.insert(nil, at: index + i)
-        //                tableView.insertRows(at: [NSIndexPath(row: index + i, section: 0) as IndexPath], with: .top)
-        //            }
-        //        }
-    }
-    
-    private func contractCell(tableView: UITableView, index: Int) {
-        //        if let jobDescs = jobData?[index]?.jobDescription {
-        //            for _ in 1...jobDescs.count {
-        //                jobData?.remove(at: index+1)
-        //                tableView.deleteRows(at: [NSIndexPath(row: index + 1, section: 0) as IndexPath], with: .top)
-        //            }
-        //        }
-    }
-    
-    private func getParentCellIndex(expansionIndex: Int) -> Int{
-        var flag: Bool = true
-        var selectedCellIndex = expansionIndex
-        
-        while (flag && selectedCellIndex >= 0) {
-            selectedCellIndex -= 1
-            flag = doesIndexExist(forIndexRow: selectedCellIndex)
-        }
-        
-        return selectedCellIndex
     }
 }
 
@@ -136,5 +99,29 @@ extension ExperienceViewController {
     
     private func doesIndexExist(forIndexRow row: Int) -> Bool {
         return model.stackableItems.indices.contains(row)
+    }
+    
+    private func presentExperienceDetailsView(row: Int) {
+//        let vc = ExperienceDetailsViewController()
+        let storyboard = UIStoryboard(name: "ExperienceDetails", bundle: nil)
+        guard let vc = storyboard.instantiateViewController(withIdentifier: "ExperienceDetails") as? ExperienceDetailsViewController else { return }
+        switch model.stackableItems[row] {
+        case .jobExperience(let company, let role, let dates, let description):
+            vc.experienceDetails = ExperienceDetails(image: UIImage(named: company ?? ""), title: role, dates: dates, description: description)
+        }
+        self.navigationController?.pushViewController(vc, animated: true)
+//        self.present(vc, animated: true, completion: nil)
+    }
+    
+    private func getParentCellIndex(expansionIndex: Int) -> Int{
+        var flag: Bool = true
+        var selectedCellIndex = expansionIndex
+        
+        while (flag && selectedCellIndex >= 0) {
+            selectedCellIndex -= 1
+            flag = doesIndexExist(forIndexRow: selectedCellIndex)
+        }
+        
+        return selectedCellIndex
     }
 }

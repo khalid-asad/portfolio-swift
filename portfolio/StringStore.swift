@@ -10,6 +10,7 @@ import Foundation
 
 enum StringStore: String {
     
+    case experienceTitle = "Experience"
     case alertTitle = "Would you like to view this image in full screen?"
     case alertMessage = "Clicking on yes will show the image on the full screen with its aspect ratio preserved"
     case yesDialog = "Yes"
