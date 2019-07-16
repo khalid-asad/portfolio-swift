@@ -12,8 +12,11 @@ import UIKit
 struct ThemeManager {
     
     var isDarkModeEnabled: Bool = true
+}
+
+// MARK: - Fonts
+extension ThemeManager {
     
-    // MARK: - Fonts
     var headerFont: UIFont {
         guard let font = UIFont(name: "Helvetica-Bold", size: 32) else { return UIFont.systemFont(ofSize: 32, weight: .bold)}
         return font
@@ -38,11 +41,12 @@ struct ThemeManager {
         guard let font = UIFont(name: "Helvetica", size: 12) else { return UIFont.systemFont(ofSize: 12)}
         return font
     }
-    
-    // MARK: - Colors
+}
+
+// MARK: - Colors
+extension ThemeManager {
     
     var darkColor: UIColor {
-//        return .black
         return UIColor(red: 33/255, green: 33/255, blue: 33/255, alpha: 1.0) /* #212121 */
     }
     

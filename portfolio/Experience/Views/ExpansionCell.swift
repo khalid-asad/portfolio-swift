@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class ExpansionCell : UITableViewCell{
-    @IBOutlet weak var jobDescription: UILabel!
+class ExpansionCell: UITableViewCell {
     
+    @IBOutlet weak var jobDescription: UILabel!
 }

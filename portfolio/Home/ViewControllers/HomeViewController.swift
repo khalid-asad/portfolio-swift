@@ -36,11 +36,15 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     override var preferredStatusBarStyle : UIStatusBarStyle {
         return .lightContent
     }
+}
+
+// MARK: - UICollectionView Methods
+extension HomeViewController {
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1
     }
-
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
         return model.stackableItems.count
     }
@@ -59,11 +63,15 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         
         return cell
     }
+}
 
-    @objc func tap(_ sender: UITapGestureRecognizer) {
+// MARK: - Tap Gestures
+extension HomeViewController {
+    
+    @objc private func tap(_ sender: UITapGestureRecognizer) {
         let location = sender.location(in: self.collectionView)
         let indexPath = self.collectionView.indexPathForItem(at: location)
-
+        
         guard let index = indexPath else { return }
         print("Clicked on index: " + String(index[1]))
         
@@ -76,7 +84,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
 // MARK: - Network Request via Model
 extension HomeViewController {
     
-    func fetchData(_ complete: (() -> Void)? = nil) {
+    private func fetchData(_ complete: (() -> Void)? = nil) {
         model.fetchData(completion: { [unowned self] status in
             switch status {
             case .success:

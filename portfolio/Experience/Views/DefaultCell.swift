@@ -9,7 +9,8 @@
 import Foundation
 import UIKit
 
-class DefaultCell : UITableViewCell{
+class DefaultCell : UITableViewCell {
+    
     @IBOutlet weak var companyImage: UIImageView!
     @IBOutlet weak var jobTitle: UILabel!
     @IBOutlet weak var dates: UILabel!

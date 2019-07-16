@@ -10,6 +10,7 @@ import Foundation
 
 // MARK: - LinksResponse
 struct LinksResponse: Codable {
+    
     let github, linkedin, website: String
     let email: String
     let googlePlay, changelog, feedback, star: String

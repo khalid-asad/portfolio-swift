@@ -17,10 +17,8 @@
 		19D84F6D20A2BB9500FC6DD7 /* ExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D84F6C20A2BB9500FC6DD7 /* ExperienceViewController.swift */; };
 		19D84F6F20A2BD9A00FC6DD7 /* DefaultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D84F6E20A2BD9A00FC6DD7 /* DefaultCell.swift */; };
 		19D84F7120A2BDCB00FC6DD7 /* ExpansionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D84F7020A2BDCB00FC6DD7 /* ExpansionCell.swift */; };
-		19D84F7520A2C44600FC6DD7 /* JobData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D84F7420A2C44600FC6DD7 /* JobData.swift */; };
 		19D84F7620A2E19000FC6DD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 197D689E20A13EA20088B990 /* Main.storyboard */; };
 		19D84F7720A2E19400FC6DD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 197D68A320A13EA30088B990 /* LaunchScreen.storyboard */; };
-		19D84F7920A2EB8500FC6DD7 /* CardsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D84F7820A2EB8500FC6DD7 /* CardsCollectionViewCell.swift */; };
 		3052837222D5858A00E270D4 /* PlatformCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3052837122D5858A00E270D4 /* PlatformCommon.framework */; };
 		3052837522D5875D00E270D4 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3052837422D5875D00E270D4 /* HomeModel.swift */; };
 		3052837B22D59A5900E270D4 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3052837A22D59A5900E270D4 /* HomeCollectionViewCell.swift */; };
@@ -39,6 +37,9 @@
 		30B3DC6F22DB8E1B006E7A99 /* ExperienceDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30B3DC6E22DB8E1B006E7A99 /* ExperienceDetailsView.xib */; };
 		30B3DC7122DB9C80006E7A99 /* ExperienceDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30B3DC7022DB9C80006E7A99 /* ExperienceDetails.storyboard */; };
 		30C0BD9322DD4E84006D5C90 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C0BD9222DD4E84006D5C90 /* ThemeManager.swift */; };
+		30C0BD9522DD712F006D5C90 /* SkillsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C0BD9422DD712F006D5C90 /* SkillsModel.swift */; };
+		30C0BD9722DD717C006D5C90 /* EducationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C0BD9622DD717C006D5C90 /* EducationResponse.swift */; };
+		30C0BD9922DD7187006D5C90 /* SkillsResposne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C0BD9822DD7186006D5C90 /* SkillsResposne.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,8 +57,6 @@
 		19D84F6C20A2BB9500FC6DD7 /* ExperienceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceViewController.swift; sourceTree = "<group>"; };
 		19D84F6E20A2BD9A00FC6DD7 /* DefaultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCell.swift; sourceTree = "<group>"; };
 		19D84F7020A2BDCB00FC6DD7 /* ExpansionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpansionCell.swift; sourceTree = "<group>"; };
-		19D84F7420A2C44600FC6DD7 /* JobData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobData.swift; sourceTree = "<group>"; };
-		19D84F7820A2EB8500FC6DD7 /* CardsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsCollectionViewCell.swift; sourceTree = "<group>"; };
 		3052837122D5858A00E270D4 /* PlatformCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PlatformCommon.framework; path = Carthage/Build/iOS/PlatformCommon.framework; sourceTree = "<group>"; };
 		3052837422D5875D00E270D4 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		3052837A22D59A5900E270D4 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -76,6 +75,9 @@
 		30B3DC6E22DB8E1B006E7A99 /* ExperienceDetailsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExperienceDetailsView.xib; sourceTree = "<group>"; };
 		30B3DC7022DB9C80006E7A99 /* ExperienceDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ExperienceDetails.storyboard; sourceTree = "<group>"; };
 		30C0BD9222DD4E84006D5C90 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		30C0BD9422DD712F006D5C90 /* SkillsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsModel.swift; sourceTree = "<group>"; };
+		30C0BD9622DD717C006D5C90 /* EducationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationResponse.swift; sourceTree = "<group>"; };
+		30C0BD9822DD7186006D5C90 /* SkillsResposne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsResposne.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,11 +120,7 @@
 				3052836322D5841500E270D4 /* Projects */,
 				3052836222D5840A00E270D4 /* Skills */,
 				197D689820A13EA20088B990 /* AppDelegate.swift */,
-				19D84F7820A2EB8500FC6DD7 /* CardsCollectionViewCell.swift */,
 				197D689E20A13EA20088B990 /* Main.storyboard */,
-				19D84F7420A2C44600FC6DD7 /* JobData.swift */,
-				19D84F6E20A2BD9A00FC6DD7 /* DefaultCell.swift */,
-				19D84F7020A2BDCB00FC6DD7 /* ExpansionCell.swift */,
 				197D68A120A13EA30088B990 /* Assets.xcassets */,
 				197D68A320A13EA30088B990 /* LaunchScreen.storyboard */,
 				197D68A620A13EA30088B990 /* Info.plist */,
@@ -257,6 +255,7 @@
 		3052836F22D5849F00E270D4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				30C0BD9422DD712F006D5C90 /* SkillsModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -293,6 +292,8 @@
 				3052837D22D5A98C00E270D4 /* LinksResponse.swift */,
 				3090D8EF22D69FAE00626DE5 /* JobExperienceResponse.swift */,
 				308DE47922D85710002947F4 /* ProjectsResponse.swift */,
+				30C0BD9622DD717C006D5C90 /* EducationResponse.swift */,
+				30C0BD9822DD7186006D5C90 /* SkillsResposne.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -316,6 +317,8 @@
 		30B3DC6B22DB8E04006E7A99 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				19D84F6E20A2BD9A00FC6DD7 /* DefaultCell.swift */,
+				19D84F7020A2BDCB00FC6DD7 /* ExpansionCell.swift */,
 				30B3DC6C22DB8E10006E7A99 /* ExperienceDetailsView.swift */,
 				30B3DC6E22DB8E1B006E7A99 /* ExperienceDetailsView.xib */,
 			);
@@ -430,19 +433,20 @@
 			files = (
 				197D68B120A156BE0088B990 /* SkillsViewController.swift in Sources */,
 				19D84F6F20A2BD9A00FC6DD7 /* DefaultCell.swift in Sources */,
-				19D84F7920A2EB8500FC6DD7 /* CardsCollectionViewCell.swift in Sources */,
 				3052838022D5AAA000E270D4 /* StringStore.swift in Sources */,
 				19D84F6720A277FA00FC6DD7 /* CustomCollectionViewCell.swift in Sources */,
 				197D689920A13EA20088B990 /* AppDelegate.swift in Sources */,
+				30C0BD9722DD717C006D5C90 /* EducationResponse.swift in Sources */,
+				30C0BD9922DD7187006D5C90 /* SkillsResposne.swift in Sources */,
 				3052837B22D59A5900E270D4 /* HomeCollectionViewCell.swift in Sources */,
 				197D68AD20A156960088B990 /* EducationViewController.swift in Sources */,
-				19D84F7520A2C44600FC6DD7 /* JobData.swift in Sources */,
 				308DE47A22D85710002947F4 /* ProjectsResponse.swift in Sources */,
 				3090D8EE22D69C8700626DE5 /* ExperienceModel.swift in Sources */,
 				30C0BD9322DD4E84006D5C90 /* ThemeManager.swift in Sources */,
 				308DE48322D86725002947F4 /* ProjectsModel.swift in Sources */,
 				3090D8F622D82ADB00626DE5 /* ProfileView.swift in Sources */,
 				19D84F7120A2BDCB00FC6DD7 /* ExpansionCell.swift in Sources */,
+				30C0BD9522DD712F006D5C90 /* SkillsModel.swift in Sources */,
 				3052837522D5875D00E270D4 /* HomeModel.swift in Sources */,
 				19D84F6D20A2BB9500FC6DD7 /* ExperienceViewController.swift in Sources */,
 				3052837E22D5A98C00E270D4 /* LinksResponse.swift in Sources */,

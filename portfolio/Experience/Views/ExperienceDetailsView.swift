@@ -18,16 +18,7 @@ final class ExperienceDetailsView: UIView {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        titleLabel.font = ThemeManager().titleFont
-        datesLabel.font = ThemeManager().subTitleFont
-        descriptionLabel.font = ThemeManager().subTitleFont
-        
-        backgroundColor = ThemeManager().primaryBackgroundColor
-        
-        [titleLabel, datesLabel, descriptionLabel].forEach() {
-            $0.textColor = ThemeManager().primaryFontColor
-        }
+        setUpTheme()
     }
 }
 
@@ -51,6 +42,18 @@ extension ExperienceDetailsView {
         descriptionLabel.configure(text: description)
         if let image = image {
             imageView.image = image
+        }
+    }
+    
+    private func setUpTheme() {
+        titleLabel.font = ThemeManager().titleFont
+        datesLabel.font = ThemeManager().subTitleFont
+        descriptionLabel.font = ThemeManager().subTitleFont
+        
+        backgroundColor = ThemeManager().primaryBackgroundColor
+        
+        [titleLabel, datesLabel, descriptionLabel].forEach() {
+            $0.textColor = ThemeManager().primaryFontColor
         }
     }
 }

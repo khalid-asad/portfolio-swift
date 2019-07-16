@@ -56,7 +56,7 @@ extension ProjectsViewController {
     }
 }
 
-// MARK: - Privates
+// MARK: - Private Methods
 extension ProjectsViewController {
     
     private func configureStackView() {
@@ -85,6 +85,7 @@ extension ProjectsViewController {
     }
 }
 
+// MARK: - UIEdgeInsets
 extension UIEdgeInsets {
     
     fileprivate static let project: UIEdgeInsets = UIEdgeInsets(top: 8, left: 8, bottom: -8, right: -8)

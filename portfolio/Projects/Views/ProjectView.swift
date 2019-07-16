@@ -17,17 +17,7 @@ final class ProjectView: UIView {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        projectLabel.font = ThemeManager().titleFont
-        descriptionLabel.font = ThemeManager().subTitleFont
-        [projectLabel, descriptionLabel].forEach() {
-            $0.textColor = ThemeManager().primaryFontColor
-        }
-        
-        backgroundColor = ThemeManager().primaryBackgroundColor
-        
-        addBorder(color: ThemeManager().secondaryBackgroundColor, width: 1)
-        setRoundedCorners(radius: 4)
+        setUpTheme()
     }
 }
 
@@ -51,5 +41,18 @@ extension ProjectView {
         if let image = image {
             imageView.image = image
         }
+    }
+    
+    private func setUpTheme() {
+        projectLabel.font = ThemeManager().titleFont
+        descriptionLabel.font = ThemeManager().subTitleFont
+        [projectLabel, descriptionLabel].forEach() {
+            $0.textColor = ThemeManager().primaryFontColor
+        }
+        
+        backgroundColor = ThemeManager().primaryBackgroundColor
+        
+        addBorder(color: ThemeManager().secondaryBackgroundColor, width: 1)
+        setRoundedCorners(radius: 4)
     }
 }

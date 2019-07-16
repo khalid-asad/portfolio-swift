@@ -26,6 +26,10 @@ class ExperienceViewController: UITableViewController {
         
         tableView.rowHeight = UITableView.automaticDimension
     }
+}
+
+// MARK: - UITableView Methods
+extension ExperienceViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return numberOfExperiences
