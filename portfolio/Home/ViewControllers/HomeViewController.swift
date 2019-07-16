@@ -104,7 +104,7 @@ extension HomeViewController {
     private func layoutCollectionView() {
         let cellWidth = ((UIScreen.main.bounds.width) - 32 - 30 ) / 3
         let cellLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout
-        cellLayout?.itemSize = CGSize(width: cellWidth, height: cellWidth)
+        cellLayout?.itemSize = CGSize(width: cellWidth, height: cellWidth + 32)
     }
     
     private func configureProfileView() {

@@ -14,8 +14,6 @@ class SkillsViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     var model: SkillsModel!
     
-    let skillNames = ["Swift", "iOS", "Android", "Java", "Python", "C", "Embedded", "C++", "XML", "JavaScript", "PHP", "SQL", "CSS"]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,29 +24,56 @@ class SkillsViewController: UIViewController, UICollectionViewDelegate, UICollec
         
         setUpTheme()
         layoutCollectionView()
+        fetchData()
     }
 }
 
 // MARK: - UICollectionView Methods
 extension SkillsViewController {
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
-        return skillNames.count
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return model.stackableItems.count
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "customCell", for: indexPath) as! CustomCollectionViewCell
-        cell.imageCell.setImage(UIImage(named: skillNames[indexPath.row].prefix(1).lowercased()), for: .normal)
-        cell.imageCell.showsTouchWhenHighlighted = true
-        cell.labelCell.text = skillNames[indexPath.row]
-        cell.labelCell.font = ThemeManager().subHeaderFont
-        cell.labelCell.textColor = ThemeManager().secondaryBackgroundColor
+        
+        cell.skillLabel.font = ThemeManager().subTitleFont
+        cell.skillLabel.textColor = ThemeManager().secondaryBackgroundColor
+        cell.yearsOfExperienceLabel.font = ThemeManager().subHeaderFont
+        cell.yearsOfExperienceLabel.textColor = ThemeManager().secondaryBackgroundColor
         cell.backgroundColor = ThemeManager().primaryBackgroundColor
+        
+        switch model.stackableItems[indexPath.row] {
+        case .skill(let skill, let yearsOfExperience):
+            guard let skill = skill else { return cell }
+            cell.imageView.image = UIImage(named: skill.prefix(1).lowercased())
+            cell.skillLabel.text = skill
+            cell.yearsOfExperienceLabel.text = String(yearsOfExperience ?? 1) + "y"
+        }
+
         return cell
     }
 }
 
-// MARK: - Privates
+// MARK: - Network Request via Model
+extension SkillsViewController {
+    
+    func fetchData(_ complete: (() -> Void)? = nil) {
+        model.fetchData(completion: { [unowned self] status in
+            switch status {
+            case .success:
+                DispatchQueue.main.async {
+                    self.collectionView.reloadData()
+                }
+            default:
+                break
+            }
+        })
+    }
+}
+
+// MARK: - Private Methods
 extension SkillsViewController {
     
     private func layoutCollectionView() {

@@ -13,4 +13,9 @@ struct SkillsResponse: Decodable {
     
     var skill: String?
     var yearsOfExperience: Int?
+    
+    enum CodingKeys: String, CodingKey {
+        case skill
+        case yearsOfExperience = "years_of_experience"
+    }
 }

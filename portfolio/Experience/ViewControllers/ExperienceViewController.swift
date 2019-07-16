@@ -20,8 +20,7 @@ class ExperienceViewController: UITableViewController {
         
         title = StringStore.experienceTitle.rawValue
         
-        view.backgroundColor = ThemeManager().primaryBackgroundColor
-        
+        setUpTheme()
         fetchData()
         
         tableView.rowHeight = UITableView.automaticDimension
@@ -82,8 +81,15 @@ extension ExperienceViewController {
     }
 }
 
-// MARK: - Privates
+// MARK: - Private Methods
 extension ExperienceViewController {
+    
+    private func setUpTheme() {
+        view.backgroundColor = ThemeManager().primaryBackgroundColor
+        navigationController?.navigationBar.isTranslucent = false
+        navigationController?.navigationBar.barTintColor = ThemeManager().primaryBackgroundColor
+        navigationController?.navigationBar.titleTextAttributes = [.font: ThemeManager().headerFont, .foregroundColor: ThemeManager().primaryFontColor]
+    }
     
     private var numberOfExperiences: Int {
         return model.stackableItems.count

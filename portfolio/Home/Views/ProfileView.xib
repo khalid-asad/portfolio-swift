@@ -20,11 +20,11 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="594" height="354"/>
+            <rect key="frame" x="0.0" y="0.0" width="299" height="255"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="3AN-Rs-jcZ">
-                    <rect key="frame" x="207" y="55.5" width="180" height="243"/>
+                    <rect key="frame" x="59.5" y="8" width="180" height="239"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Px-LU-Ye3" userLabel="Profile Image">
                             <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
@@ -34,7 +34,7 @@
                             </constraints>
                         </imageView>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Xt5-ho-Z2P" userLabel="Description Stack View">
-                            <rect key="frame" x="0.0" y="196" width="180" height="47"/>
+                            <rect key="frame" x="0.0" y="196" width="180" height="43"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Khalid" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bcf-7A-rWK">
                                     <rect key="frame" x="0.0" y="0.0" width="180" height="20.5"/>
@@ -43,7 +43,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Mobile Application Dev" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELh-w9-oCr">
-                                    <rect key="frame" x="0.0" y="26.5" width="180" height="20.5"/>
+                                    <rect key="frame" x="0.0" y="26.5" width="180" height="16.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
@@ -55,12 +55,13 @@
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="3AN-Rs-jcZ" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="6Hh-bD-EgL"/>
                 <constraint firstItem="3AN-Rs-jcZ" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="BeX-iC-Gjm"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="3AN-Rs-jcZ" secondAttribute="bottom" constant="8" id="Bqx-Pf-pJN"/>
+                <constraint firstItem="3AN-Rs-jcZ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="FsY-70-K8W"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <point key="canvasLocation" x="171.19999999999999" y="-99.850074962518747"/>
+            <point key="canvasLocation" x="-64.799999999999997" y="-144.3778110944528"/>
         </view>
     </objects>
 </document>

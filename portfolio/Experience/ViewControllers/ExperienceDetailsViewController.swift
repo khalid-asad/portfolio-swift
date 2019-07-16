@@ -20,23 +20,27 @@ class ExperienceDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = ThemeManager().primaryBackgroundColor
+        title = ""
 
-        guard let experienceDetails = experienceDetails else { return }
-        title = experienceDetails.title
-        configureExperienceDetailsView(experienceDetails: experienceDetails)
+        setUpTheme()
+        configureExperienceDetailsView()
     }
 }
 
 // MARK: - Private Methods
 extension ExperienceDetailsViewController {
     
-    private func configureExperienceDetailsView(experienceDetails: ExperienceDetails) {
+    private func setUpTheme() {
+        view.backgroundColor = ThemeManager().primaryBackgroundColor
+    }
+    
+    private func configureExperienceDetailsView() {
         stackView.arrangedSubviews.forEach {
             stackView.removeArrangedSubview($0)
             $0.removeFromSuperview()
         }
         
+        guard let experienceDetails = experienceDetails else { return }
         let view = ExperienceDetailsView.create(image: experienceDetails.image, title: experienceDetails.title, dates: experienceDetails.dates, description: experienceDetails.description)
         stackView.addArrangedSubview(UIView.createView(withSubview: view, edgeInsets: .zero))
     }

@@ -26,5 +26,5 @@ enum StringStore: String {
     case jobExperienceJSONPath = "https://gist.githubusercontent.com/khalid-asad/e9665e1427e239beb070b45d199e7f2c/raw/72c48608ce9bf66e92c778b7d64c8c6ab7ddce92/experience.json"
     case projectsJSONPath = "https://gist.githubusercontent.com/khalid-asad/7a721a1cc1a078262933cb82fad706a5/raw/fe9c00c564d49241e68843d9b248efd39a2f8486/projects.json"
     case educationJSONPath = "blah"
-    case skillsJSONPath = "blhabla"
+    case skillsJSONPath = "https://gist.githubusercontent.com/khalid-asad/1c121b667e6df8f288d5c378cb51900b/raw/0c7db79d285f1818033b63706ce96266b46b961d/skills.json"
 }

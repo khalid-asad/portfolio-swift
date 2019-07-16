@@ -10,6 +10,7 @@ import UIKit
 
 class CustomCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var imageCell: UIButton!
-    @IBOutlet weak var labelCell: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var skillLabel: UILabel!
+    @IBOutlet weak var yearsOfExperienceLabel: UILabel!
 }
