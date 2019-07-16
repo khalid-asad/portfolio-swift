@@ -16,6 +16,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        UITabBar.appearance().tintColor = ThemeManager().imageTintColor
+        
+        if let tabBarController = self.window?.rootViewController as? UITabBarController {
+            let tabBar = tabBarController.tabBar
+            tabBar.barTintColor = ThemeManager().primaryBackgroundColor
+            tabBar.isTranslucent = false
+            
+            tabBar.layer.borderWidth = 0.3
+            tabBar.layer.borderColor = ThemeManager().secondaryBackgroundColor.cgColor
+            tabBar.clipsToBounds = true
+            
+            let array = tabBarController.customizableViewControllers
+            for controller in array! {
+                controller.tabBarItem.imageInsets = UIEdgeInsets(top: 5, left: 0, bottom: -5, right: 0)
+                controller.tabBarItem.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: 12)
+            }
+        }
+        
         return true
     }
 

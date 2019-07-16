@@ -19,12 +19,14 @@ final class ExperienceDetailsView: UIView {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        titleLabel.font = UIFont(name: "HelveticaNeue", size: 20)
-        datesLabel.font = UIFont(name: "HelveticaNeue", size: 14)
-        descriptionLabel.font = UIFont(name: "HelveticaNeue", size: 14)
+        titleLabel.font = ThemeManager().titleFont
+        datesLabel.font = ThemeManager().subTitleFont
+        descriptionLabel.font = ThemeManager().subTitleFont
+        
+        backgroundColor = ThemeManager().primaryBackgroundColor
         
         [titleLabel, datesLabel, descriptionLabel].forEach() {
-            $0.textColor = UIColor.black
+            $0.textColor = ThemeManager().primaryFontColor
         }
     }
 }

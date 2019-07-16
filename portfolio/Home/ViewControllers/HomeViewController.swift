@@ -21,6 +21,8 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         
         model = HomeModel()
         
+        view.backgroundColor = ThemeManager().secondaryBackgroundColor
+        
         configureProfileView()
         layoutCollectionView()
         fetchData()
@@ -48,9 +50,11 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         let name = Array(model.links.keys)[indexPath.row]
         
         cell.cellTitle.text = name.uppercased()
-        cell.cellTitle.textColor = .black
-        cell.cellTitle.font = UIFont(name: "Helvetica", size: 12)
-        cell.cellImage.image = UIImage(named: name)
+        cell.cellTitle.textColor = ThemeManager().primaryFontColor
+        cell.cellTitle.font = ThemeManager().smallTitleFont
+        cell.cellImage.image = UIImage(named: name)?.withRenderingMode(.alwaysTemplate)
+        collectionView.backgroundColor = ThemeManager().primaryBackgroundColor
+        cell.cellImage.tintColor = ThemeManager().imageTintColor
         cell.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tap(_:))))
         
         return cell

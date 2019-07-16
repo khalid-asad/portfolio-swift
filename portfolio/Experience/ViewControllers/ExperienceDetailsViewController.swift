@@ -22,6 +22,8 @@ class ExperienceDetailsViewController: UIViewController {
         
         guard let experienceDetails = experienceDetails else { return }
         
+        view.backgroundColor = ThemeManager().primaryBackgroundColor
+        
         title = experienceDetails.title
         
         configureExperienceDetailsView(experienceDetails: experienceDetails)

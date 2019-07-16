@@ -47,7 +47,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstItem="On7-RE-Ppc" firstAttribute="top" secondItem="0CX-XQ-wmV" secondAttribute="top" id="9ni-cK-9Gd"/>
                                 <constraint firstItem="On7-RE-Ppc" firstAttribute="leading" secondItem="0CX-XQ-wmV" secondAttribute="leading" constant="16" id="Qrl-VT-PXh"/>
@@ -61,7 +61,7 @@
                     </constraints>
                 </stackView>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="JUe-YE-WGt" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="3s6-qK-fSN"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="JUe-YE-WGt" secondAttribute="bottom" id="un3-us-iD9"/>

@@ -19,8 +19,24 @@ class ProjectsViewController: UIViewController {
         
         model = ProjectsModel()
         
+        view.backgroundColor = ThemeManager().primaryBackgroundColor
+        
+        title = StringStore.projectsTitle.rawValue
+        
         fetchData()
     }
+    
+    private lazy var projectsHeaderLabel: UILabel = {
+        var label = UILabel()
+        label.numberOfLines = 0
+        label.lineBreakMode = .byWordWrapping
+        label.text = StringStore.projectsTitle.rawValue
+        label.font = ThemeManager().headerFont
+        label.textAlignment = .center
+        label.textColor = ThemeManager().primaryFontColor
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
 }
 
 // MARK: - Network Request via Model
@@ -49,6 +65,8 @@ extension ProjectsViewController {
             $0.removeFromSuperview()
         }
         
+        addProjectsHeaderView()
+        
         model.stackableItems.forEach { item in
             switch item {
             case .project(let project, let image, let description):
@@ -57,9 +75,13 @@ extension ProjectsViewController {
         }
     }
     
+    private func addProjectsHeaderView() {
+        projectsStackView.addArrangedSubview(UIView.createView(withSubview: projectsHeaderLabel, edgeInsets: .project, backgroundColor: .clear))
+    }
+    
     private func addProjectView(project: String?, image: String?, description: String?) {
         let projectView = ProjectView.create(image: UIImage(named: image ?? ""), project: project, description: description)
-        projectsStackView.addArrangedSubview(UIView.createView(withSubview: projectView, edgeInsets: .project))
+        projectsStackView.addArrangedSubview(UIView.createView(withSubview: projectView, edgeInsets: .project, backgroundColor: .clear))
     }
 }
 

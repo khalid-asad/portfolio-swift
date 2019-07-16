@@ -13,16 +13,14 @@ class ExperienceViewController: UITableViewController {
     
     private var model: ExperienceModel!
     
-    private var numberOfExperiences: Int {
-        return model.stackableItems.count
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         model = ExperienceModel()
         
         title = StringStore.experienceTitle.rawValue
+        
+        view.backgroundColor = ThemeManager().primaryBackgroundColor
         
         fetchData()
         
@@ -47,6 +45,8 @@ class ExperienceViewController: UITableViewController {
                 defaultCell.jobTitle.text = role
                 defaultCell.dates.text = dates
                 defaultCell.selectionStyle = .none
+                defaultCell.jobTitle.textColor = ThemeManager().primaryFontColor
+                defaultCell.dates.textColor = ThemeManager().primaryFontColor
             }
             
             return defaultCell
@@ -80,6 +80,10 @@ extension ExperienceViewController {
 
 // MARK: - Privates
 extension ExperienceViewController {
+    
+    private var numberOfExperiences: Int {
+        return model.stackableItems.count
+    }
     
     private func configureStackView() {
         tableView.reloadData()

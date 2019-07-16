@@ -38,6 +38,7 @@
 		30B3DC6D22DB8E10006E7A99 /* ExperienceDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B3DC6C22DB8E10006E7A99 /* ExperienceDetailsView.swift */; };
 		30B3DC6F22DB8E1B006E7A99 /* ExperienceDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30B3DC6E22DB8E1B006E7A99 /* ExperienceDetailsView.xib */; };
 		30B3DC7122DB9C80006E7A99 /* ExperienceDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30B3DC7022DB9C80006E7A99 /* ExperienceDetails.storyboard */; };
+		30C0BD9322DD4E84006D5C90 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C0BD9222DD4E84006D5C90 /* ThemeManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		30B3DC6C22DB8E10006E7A99 /* ExperienceDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceDetailsView.swift; sourceTree = "<group>"; };
 		30B3DC6E22DB8E1B006E7A99 /* ExperienceDetailsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExperienceDetailsView.xib; sourceTree = "<group>"; };
 		30B3DC7022DB9C80006E7A99 /* ExperienceDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ExperienceDetails.storyboard; sourceTree = "<group>"; };
+		30C0BD9222DD4E84006D5C90 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 		197D689720A13EA20088B990 /* portfolio */ = {
 			isa = PBXGroup;
 			children = (
+				30C0BD9122DD4E76006D5C90 /* Theme */,
 				3052837C22D5A97600E270D4 /* Networking */,
 				3052836122D5840000E270D4 /* Home */,
 				3052836522D5842100E270D4 /* Experience */,
@@ -151,8 +154,8 @@
 		3052836322D5841500E270D4 /* Projects */ = {
 			isa = PBXGroup;
 			children = (
-				308DE47B22D857B4002947F4 /* Views */,
 				3052836E22D5849C00E270D4 /* Models */,
+				308DE47B22D857B4002947F4 /* Views */,
 				3052836922D5847000E270D4 /* ViewControllers */,
 			);
 			path = Projects;
@@ -319,6 +322,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		30C0BD9122DD4E76006D5C90 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				30C0BD9222DD4E84006D5C90 /* ThemeManager.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -428,6 +439,7 @@
 				19D84F7520A2C44600FC6DD7 /* JobData.swift in Sources */,
 				308DE47A22D85710002947F4 /* ProjectsResponse.swift in Sources */,
 				3090D8EE22D69C8700626DE5 /* ExperienceModel.swift in Sources */,
+				30C0BD9322DD4E84006D5C90 /* ThemeManager.swift in Sources */,
 				308DE48322D86725002947F4 /* ProjectsModel.swift in Sources */,
 				3090D8F622D82ADB00626DE5 /* ProfileView.swift in Sources */,
 				19D84F7120A2BDCB00FC6DD7 /* ExpansionCell.swift in Sources */,

@@ -14,5 +14,9 @@ class EducationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = StringStore.educationTitle.rawValue
+        
+        view.backgroundColor = ThemeManager().primaryBackgroundColor
     }
 }
