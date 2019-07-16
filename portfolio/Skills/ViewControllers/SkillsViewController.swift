@@ -16,8 +16,13 @@ class SkillsViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         collectionView.delegate = self
         collectionView.dataSource = self
+        
+        view.backgroundColor = ThemeManager().primaryBackgroundColor
+        collectionView.backgroundColor = ThemeManager().primaryBackgroundColor
+        
         layoutCollectionView()
     }
     
@@ -30,6 +35,9 @@ class SkillsViewController: UIViewController, UICollectionViewDelegate, UICollec
         cell.imageCell.setImage(UIImage(named: skillNames[indexPath.row].prefix(1).lowercased()), for: .normal)
         cell.imageCell.showsTouchWhenHighlighted = true
         cell.labelCell.text = skillNames[indexPath.row]
+        cell.labelCell.font = ThemeManager().subHeaderFont
+        cell.labelCell.textColor = ThemeManager().secondaryBackgroundColor
+        cell.backgroundColor = ThemeManager().primaryBackgroundColor
         return cell
     }
 }

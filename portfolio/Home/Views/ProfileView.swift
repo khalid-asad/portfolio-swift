@@ -62,7 +62,13 @@ final class ProfileView: UIView {
         contentView.frame = self.bounds
         contentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         
-        profileNameLabel.font = UIFont(name: "HelveticaNeueBold", size: 16)
-        profileTitleLabel.font = UIFont(name: "HelveticaNeueBold", size: 16)
+        contentView.backgroundColor = ThemeManager().secondaryBackgroundColor
+        
+        profileNameLabel.font = ThemeManager().titleFont
+        profileTitleLabel.font = ThemeManager().subTitleFont
+        
+        [profileNameLabel, profileTitleLabel].forEach {
+            $0.textColor = ThemeManager().secondaryFontColor
+        }
     }
 }

@@ -18,13 +18,15 @@ final class ProjectView: UIView {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        projectLabel.font = UIFont(name: "HelveticaNeue", size: 20)
-        descriptionLabel.font = UIFont(name: "HelveticaNeue", size: 14)
+        projectLabel.font = ThemeManager().titleFont
+        descriptionLabel.font = ThemeManager().subTitleFont
         [projectLabel, descriptionLabel].forEach() {
-            $0.textColor = UIColor.black
+            $0.textColor = ThemeManager().primaryFontColor
         }
         
-        addBorder(color: .black, width: 1)
+        backgroundColor = ThemeManager().primaryBackgroundColor
+        
+        addBorder(color: ThemeManager().secondaryBackgroundColor, width: 1)
         setRoundedCorners(radius: 4)
     }
 }

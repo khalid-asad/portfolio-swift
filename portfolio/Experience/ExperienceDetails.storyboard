@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ExperienceDetailsViewController-->
+        <scene sceneID="aYJ-me-iWP">
+            <objects>
+                <viewController storyboardIdentifier="ExperienceDetails" title="ExperienceDetailsViewController" id="XB1-k5-Q9Y" customClass="ExperienceDetailsViewController" customModule="portfolio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u6M-VM-SzG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EEl-cO-hwZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mCM-Ve-45o">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="mCM-Ve-45o" firstAttribute="top" secondItem="EEl-cO-hwZ" secondAttribute="top" id="7Re-LY-O6S"/>
+                                    <constraint firstAttribute="trailing" secondItem="mCM-Ve-45o" secondAttribute="trailing" id="FbP-98-JEi"/>
+                                    <constraint firstAttribute="bottom" secondItem="mCM-Ve-45o" secondAttribute="bottom" id="GZg-DA-QTs"/>
+                                    <constraint firstItem="mCM-Ve-45o" firstAttribute="height" secondItem="EEl-cO-hwZ" secondAttribute="height" id="Jfk-N8-FQz"/>
+                                    <constraint firstItem="mCM-Ve-45o" firstAttribute="width" secondItem="EEl-cO-hwZ" secondAttribute="width" id="gaw-8g-yhm"/>
+                                    <constraint firstItem="mCM-Ve-45o" firstAttribute="leading" secondItem="EEl-cO-hwZ" secondAttribute="leading" id="oSH-0P-4Wy"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="EEl-cO-hwZ" secondAttribute="bottom" id="37M-dH-It6"/>
+                            <constraint firstItem="EEl-cO-hwZ" firstAttribute="leading" secondItem="u6M-VM-SzG" secondAttribute="leading" id="4e2-9W-gOO"/>
+                            <constraint firstAttribute="trailing" secondItem="EEl-cO-hwZ" secondAttribute="trailing" id="mcC-ea-x5C"/>
+                            <constraint firstItem="EEl-cO-hwZ" firstAttribute="top" secondItem="u6M-VM-SzG" secondAttribute="top" id="ouF-hj-s1W"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ywZ-Ub-EYe"/>
+                    </view>
+                    <connections>
+                        <outlet property="stackView" destination="mCM-Ve-45o" id="fbS-YB-4Eu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NND-uy-9pQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3556" y="154"/>
+        </scene>
+    </scenes>
+</document>
